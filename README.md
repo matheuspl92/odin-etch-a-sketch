@@ -66,6 +66,15 @@ Function that creates a button on the top of the screen;
 
 Function that creates a 16x16 div grid;
   - let containerGrid = document.createElement('div');
+  - containerGrid.className = 'container';
   - document.body.appendChild(containerGrid);
+  - For loop that creates 16 div rows;
+    - let rowDiv = document.createElement('div');
+    - rowDiv.className = 'row';
+    - For loop that creates 16 divs for each row;
+      - let pixelDiv = document.createElement('div');
+      - pixelDiv.className = 'pixel';
+      - rowDiv.appendChild(pixelDiv);
+    - containerGrid.appendChild('rowDiv');
 
 Function that initializes the page;
