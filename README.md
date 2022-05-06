@@ -64,7 +64,7 @@ Function that creates a button on the top of the screen;
   - gridButton.onClick = console.log('LOG: Grid button clicked!');
   - document.body.appendChild(gridButton);
 
-Function that creates a 16x16 div grid;
+Function that creates a 16x16 div grid and adds a event listener to each cell that makes it change color when hoovered by the cursor;
   - let containerGrid = document.createElement('div');
   - containerGrid.className = 'container';
   - document.body.appendChild(containerGrid);
@@ -74,6 +74,7 @@ Function that creates a 16x16 div grid;
     - For loop that creates 16 divs for each row;
       - let pixelDiv = document.createElement('div');
       - pixelDiv.className = 'pixel';
+      - pixelDiv.addEventListener('mouseover', e = > changeColor(e));
       - rowDiv.appendChild(pixelDiv);
     - containerGrid.appendChild('rowDiv');
 
