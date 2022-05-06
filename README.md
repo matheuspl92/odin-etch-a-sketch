@@ -84,3 +84,8 @@ Function that prompts the user to enter a new size value to the grid side. (Limi
   - If size is not a number or greater than 100 return a new call of this function;
   - Calls a function that erases all the divs on the grid;
   - Calls a function that creates a new grid with the new size;
+
+Function that erases all the divs on the page;
+  - const divs = document.querySelectorAll('div');
+  - For each element;
+    - element.remove();
