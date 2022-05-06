@@ -24,7 +24,7 @@ function createGrid(size = 16){
         for(let j = 0; j < size; j++){
             let pixelDiv = document.createElement('div');
             pixelDiv.className = 'pixel';
-            pixelDiv.addEventListener('mouseover', e => console.log(e))
+            pixelDiv.addEventListener('mouseover', event => changeColor(event))
             rowDiv.appendChild(pixelDiv);
             console.log(`LOG: PIXEL ${i+1}:${j+1} created!`)
         }
@@ -43,4 +43,15 @@ function changeGrid(){
 function deleteGrid(){
     const divs = document.querySelectorAll('div');
     divs.forEach(div => div.remove());
+}
+
+function changeColor(event){
+
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    
+    event.target.style.backgroundColor = color;
 }
