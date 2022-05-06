@@ -53,3 +53,19 @@ GOALS:
 - Create a button on the top of the page;
 - Create a 16x16 grid of divs;
 - Make the top button prompt the user to input a new value to the grid size. (Limit the squares per side to 100);
+
+###################################
+
+JAVASCRIPT - PSEUDOCODE:
+
+Function that creates a button on the top of the screen;
+  - let gridButton = document.createElement('button');
+  - gridButton.innerHTML = "Change grid size";
+  - gridButton.onClick = console.log('LOG: Grid button clicked!');
+  - document.body.appendChild(gridButton);
+
+Function that creates a 16x16 div grid;
+  - let containerGrid = document.createElement('div');
+  - document.body.appendChild(containerGrid);
+
+Function that initializes the page;
