@@ -35,4 +35,11 @@ function createGrid(size = 16){
 function changeGrid(){
     let size = Number.parseInt(prompt('Insert a new number of cells to the grid side. (Only integers and values equal or below 100)'));
     if(!size || size >100){return changeGrid();}
+    deleteGrid();
+    createGrid(size);
+}
+
+function deleteGrid(){
+    const divs = document.querySelectorAll('div');
+    divs.forEach(div => div.remove());
 }
