@@ -90,3 +90,11 @@ Function that erases all the divs on the page;
   - const divs = document.querySelectorAll('div');
   - For each element;
     - element.remove();
+
+Function that changes cells color to a random color;
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+  - e.style.backgroundColor = color;
