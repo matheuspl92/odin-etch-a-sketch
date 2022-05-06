@@ -24,6 +24,7 @@ function createGrid(size = 16){
         for(let j = 0; j < size; j++){
             let pixelDiv = document.createElement('div');
             pixelDiv.className = 'pixel';
+            pixelDiv.addEventListener('mouseover', e => console.log(e))
             rowDiv.appendChild(pixelDiv);
             console.log(`LOG: PIXEL ${i+1}:${j+1} created!`)
         }
