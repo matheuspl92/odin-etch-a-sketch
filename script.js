@@ -24,9 +24,11 @@ function createGrid(size = 16){
         for(let j = 0; j < size; j++){
             let pixelDiv = document.createElement('div');
             pixelDiv.className = 'pixel';
+            pixelDiv.textContent = `${i+1}:${j+1}`;
             rowDiv.appendChild(pixelDiv);
             console.log(`LOG: PIXEL ${i+1}:${j+1} created!`)
         }
         containerGrid.appendChild(rowDiv);
     }
+    document.body.appendChild(containerGrid);
 }
