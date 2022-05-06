@@ -78,3 +78,9 @@ Function that creates a 16x16 div grid;
     - containerGrid.appendChild('rowDiv');
 
 Function that initializes the page;
+
+Function that prompts the user to enter a new size value to the grid side. (Limited to 100);
+  - let size = Number.parseInt(prompt('Insert a new number of cells to the grid side. (Only integers and values equal or below 100)'));
+  - If size is not a number or greater than 100 return a new call of this function;
+  - Calls a function that erases all the divs on the grid;
+  - Calls a function that creates a new grid with the new size;
