@@ -35,3 +35,21 @@ ASSIGNMENT:
 4. (Optional): Instead of just changing the color of a square from black to white (for example), have each pass through with the mouse change it to a completely random RGB value. Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
 
 5. Push your project to GitHub!
+
+####################################
+
+GOALS:
+
+#HTML:
+
+- Create a basic HTML file linked to a CSS and JS files;
+
+#CSS:
+
+- Make the divs appear as a grid;
+
+#JAVASCRIPT:
+
+- Create a button on the top of the page;
+- Create a 16x16 grid of divs;
+- Make the top button prompt the user to input a new value to the grid size. (Limit the squares per side to 100);
